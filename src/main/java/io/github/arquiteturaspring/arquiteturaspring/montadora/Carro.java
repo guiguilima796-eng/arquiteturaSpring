@@ -44,9 +44,19 @@ public class Carro {
 
     public CarroStatus darIgnição(Chave chave) {
         if (chave.getMontadora() == this.montadora) {
-            return new CarroStatus("Não foi Possivel Ligar o Carro, Chave Invalida");
+            return new CarroStatus("Carro ligado com sucesso :"+ toString());
         } else {
-            return new CarroStatus("Carro Desligado");
+            return new CarroStatus("Não foi possível ligar o carro, chave incompatível com a montadora do veículo");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Carro{" +
+                "modelo='" + modelo + '\'' +
+                ", cor='" + cor + '\'' +
+                ", motor=" + motor +
+                ", montadora=" + montadora +
+                '}';
     }
 }

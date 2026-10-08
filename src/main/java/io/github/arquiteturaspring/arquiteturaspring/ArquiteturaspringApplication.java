@@ -10,7 +10,7 @@ public class ArquiteturaspringApplication {
 
 	public static void main(String[] args) {
 
-		//SpringApplication.run(ArquiteturaspringApplication.class, args);
+//		SpringApplication.run(ArquiteturaspringApplication.class, args);
 
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(ArquiteturaspringApplication.class);
 		builder.bannerMode(Banner.Mode.OFF);
