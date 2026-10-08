@@ -6,6 +6,9 @@ public class Motor {
     private Double litragem;
     private int cavalos;
     private int cilindros;
+    private String modelo;
+
+
 
     public TipoMotor getTipoMotor() {
         return tipoMotor;
@@ -45,5 +48,25 @@ public class Motor {
 
     public void setCilindros(int cilindros) {
         this.cilindros = cilindros;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    @Override
+    public String toString() {
+        return "Motor{" +
+                "tipoMotor=" + tipoMotor +
+                ", montadora=" + montadora +
+                ", litragem=" + litragem +
+                ", cavalos=" + cavalos +
+                ", cilindros=" + cilindros +
+                ", modelo='" + modelo + '\'' +
+                '}';
     }
 }

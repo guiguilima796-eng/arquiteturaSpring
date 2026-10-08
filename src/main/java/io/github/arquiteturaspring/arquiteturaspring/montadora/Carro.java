@@ -41,4 +41,12 @@ public class Carro {
     public void setMontadora(Montadora montadora) {
         this.montadora = montadora;
     }
+
+    public CarroStatus darIgnição(Chave chave) {
+        if (chave.getMontadora() == this.montadora) {
+            return new CarroStatus("Não foi Possivel Ligar o Carro, Chave Invalida");
+        } else {
+            return new CarroStatus("Carro Desligado");
+        }
+    }
 }
