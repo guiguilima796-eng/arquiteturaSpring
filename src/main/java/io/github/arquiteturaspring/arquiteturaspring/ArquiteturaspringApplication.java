@@ -16,7 +16,11 @@ public class ArquiteturaspringApplication {
 		builder.bannerMode(Banner.Mode.OFF);
 		builder.profiles("guigol");
 		builder.run(args);
-
+//		ExemploValue exemploValue = builder.context().getBean(ExemploValue.class);
+//		exemploValue.imprimirVariable();
+		AppPropieties appPropieties = builder.context().getBean(AppPropieties.class);
+		System.out.println("Valor da variável do AppPropieties: " + appPropieties.getVariable());
+		System.out.println("Valor do valor do AppPropieties: " + appPropieties.getValor());
 	}
 
 }

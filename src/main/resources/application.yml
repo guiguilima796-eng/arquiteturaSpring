@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: my-application
+  jpa:
+    show-sql: true
+app:
+  config:
+    variable: valor da variavel X
+    valor: valor da variavel Y
